@@ -2001,7 +2001,7 @@ async function handleInstagram(api, event, body, threadID, messageID) {
 
             const videoStream = fs.createReadStream(videoPath);
 
-            const messageBody = `【 𝗡𝗔𝗦𝗛 】𝗜𝗚 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 📱
+            const messageBody = `【 Nang 】𝗜𝗚 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 📱
 ──────────────────
 👤 𝗨𝘀𝗲𝗿: ${username || "Instagram User"}
 ${description ? `📝 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: ${description.substring(0, 100)}${description.length > 100 ? '...' : ''}` : ''}
@@ -2018,7 +2018,7 @@ ${description ? `📝 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: ${descriptio
 
         } catch (error) {
             console.error("Instagram download error:", error);
-            const errorMessage = `【 𝗡𝗔𝗦𝗛 】𝗜𝗚 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 📱
+            const errorMessage = `【 Nang 】𝗜𝗚 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 📱
 ──────────────────
 ❌ 𝗘𝗿𝗿𝗼𝗿: ${error.message}
 🔧 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗨𝗥𝗟
