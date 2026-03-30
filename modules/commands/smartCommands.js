@@ -74,7 +74,7 @@ function design(title, content) {
         title,
         titleFont: "bold",
         contentFont: "none",
-        titlePattern: "【 Nang 】{word} {emojis}",
+        titlePattern: "{word} {emojis}",
         content,
     });
 }
@@ -888,6 +888,8 @@ function handleContact(api, threadID, messageID) {
    📱 fb.com/nang
    💻 github.com/Nangsoofool
 
+   WAG MAG DROGA, PERO PWEDE MAG MARIJUANA 😉❤️
+
 💬 Support & Inquiries Welcome!`;
 
     const contactInfo = design("📞 DEVELOPER CONTACTS", contactContent);
@@ -958,15 +960,15 @@ async function handleShoti(api, threadID, messageID) {
                     attachment: fs.createReadStream(videoPath),
                 }, threadID, () => {
                     fs.unlinkSync(videoPath);
-                    api.editMessage("✅ Video sent!", info.messageID);
+                    api.editMessage("✅ Video sent, Wag ka mag jakol ha!", info.messageID);
                 }, messageID);
             });
 
             writer.on('error', () => {
-                api.editMessage("❌ Error processing video.", info.messageID);
+                api.editMessage("❌ Ayaw boss, bakit kaya?.", info.messageID);
             });
         } catch (error) {
-            api.editMessage("❌ Error fetching video.", info.messageID);
+            api.editMessage("❌ Wala bawal manyakis dito.", info.messageID);
         }
     });
 }
