@@ -74,7 +74,7 @@ function design(title, content) {
         title,
         titleFont: "bold",
         contentFont: "none",
-        titlePattern: "【 NASH 】{word} {emojis}",
+        titlePattern: "【 Nang 】{word} {emojis}",
         content,
     });
 }
