@@ -882,20 +882,11 @@ async function handleAIQuery(api, event, body, threadID, messageID) {
 }
 
 function handleContact(api, threadID, messageID) {
-    const contactContent = `🧑‍💻 LEAD DEVELOPER
+    const contactContent = `🧑‍💻 DEVELOPER
    Nang
    📧 nangdnd02@gmail.com
    📱 fb.com/nang
-   💻 github.com/Nang
-
-👨‍💻 CO-LEAD DEVELOPER  
-   N/A
-   📧 N/A
-   📱 N/A
-   💻 N/A
-
-🌐 PORTFOLIO
-   Nangsodamn.portfolio.com
+   💻 github.com/Nangsoofool
 
 💬 Support & Inquiries Welcome!`;
 
@@ -1175,7 +1166,7 @@ async function handleSendNotification(api, event, args, threadID, messageID) {
 }
 
 function handleComprehensiveHelp(api, threadID, messageID, prefix) {
-    const { commands } = global.NashBoT;
+    const { commands } = global.NangBOT;
     const commandArray = Array.from(commands.values());
 
     const uniqueCommands = commandArray.filter((cmd, index, self) => 
